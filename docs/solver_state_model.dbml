@@ -1,0 +1,16 @@
+Table states {
+  id integer [primary key]
+  three_gallon_amount integer [not null]
+  five_gallon_amount integer [not null]
+}
+
+Table moves {
+  id integer [primary key]
+  description varchar [not null]
+  from_state_id integer [not null]
+  to_state_id integer [not null]
+  step_number integer
+}
+
+Ref: moves.from_state_id > states.id
+Ref: moves.to_state_id > states.id
