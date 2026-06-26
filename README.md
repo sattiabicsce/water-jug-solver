@@ -71,8 +71,6 @@ Breadth-first search is used because the first goal state it finds is the shorte
 
 ## Mermaid Documentation
 
-The EMRTS checklist asks for Mermaid in documentation. This diagram shows the default 6-step path found by the program.
-
 ```mermaid
 flowchart TD
     A["Start: 3=0, 5=0"]
@@ -105,8 +103,6 @@ flowchart LR
 
 ## dbdiagram ERD Documentation
 
-The EMRTS checklist also asks for dbdiagram for ERD documentation. This project does not use a database, but the conceptual model below can be pasted into [dbdiagram.io](https://dbdiagram.io/) to document the solver's state and move relationships.
-
 ```dbml
 Table states {
   id integer [primary key]
@@ -126,7 +122,7 @@ Ref: moves.from_state_id > states.id
 Ref: moves.to_state_id > states.id
 ```
 
-A standalone DBML copy is also available in `docs/solver_state_model.dbml`.
+DBML copy is also available in `docs/solver_state_model.dbml`.
 
 ## Validation
 
